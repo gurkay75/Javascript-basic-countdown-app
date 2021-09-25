@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Javascript Basic Countdown App </title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+    
+    <style>
+        .countdown{
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column
+        }
+        #timer{
+            font-size:3rem;
+        }
+        input{
+            width:280px;
+            height:45px;
+            text-align: center;
+            border-radius:10px;
+            border:0.5 solid;
+            outline: none;
+            font-size:15px;
+        }
+        button{
+            width:250px;
+            height:45px;
+            outline: none;
+            border-radius:20px;
+            border:none;
+            background: black;
+            color:white;
+            margin-top:1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="countdown">
+        <h1>Javascript Basic Countdown App</h1>
+        <audio src="sound.mp3" id="alertsound" loop="loop"></audio>
+    <input type="number" placeholder="Enter time for countdown: (in seconds)" id="timeinput">
+    <button id="starttimer">Start</button>
+  <!-- your content here... -->
+    <h2 id="timer"></h2>
+    </div>
+    
+  <script src="jquery.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
